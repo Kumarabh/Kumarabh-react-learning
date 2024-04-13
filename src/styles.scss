@@ -1,0 +1,24 @@
+div.navbar {
+  border: 1px solid #d3d3d3;
+
+  ul {
+    list-style: none;
+    display: flex;
+  }
+  li > a {
+    text-decoration: none;
+    margin-right: 30px;
+    cursor: pointer;
+    color: #333;
+  }
+}
+
+div.footer {
+  min-height: 100px;
+  width: 100%;
+  background: #f4f4f4;
+  // background-color: #d3d3d3;
+  margin-top: 15px;
+  position: fixed;
+  bottom: 0;
+}
