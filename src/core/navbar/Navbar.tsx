@@ -11,6 +11,9 @@ const Navbar = () => {
         <li>
         <NavLink to= '/about' className={({isActive}) => `${isActive ? 'font-weight-bold': ''}`}>About</NavLink>
         </li>
+        <li>
+        <NavLink to= '/github' className={({isActive}) => `${isActive ? 'font-weight-bold': ''}`}>Github</NavLink>
+        </li>
       </ul>
     </div>
   </>)
