@@ -6,7 +6,7 @@ import Layout from './core/layout/Layout.tsx'
 import Home from './components/home/Home.tsx'
 import About from './components/about/About.tsx'
 import User from './components/user/User.tsx'
-import Github from './components/github/Github.tsx'
+import Github, { GithubInfoLoader } from './components/github/Github.tsx'
 
 // Method-1
 // const router = createBrowserRouter([
@@ -27,7 +27,8 @@ const router = createBrowserRouter(
       <Route path = '' element = {<Home />}/>
       <Route path = 'about' element = {<About />}/>
       <Route path = 'user/:id' element = {<User />}/>
-      <Route path = 'github' element = {<Github />}/>
+      {/* <Route path = 'github' element = {<Github />}/> */}
+      <Route path='github' element = {<Github />} loader={GithubInfoLoader}/>
     </Route>
   )
 )
